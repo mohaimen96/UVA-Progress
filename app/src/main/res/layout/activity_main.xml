@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.uhunt.sample1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/digitalt"
+        android:padding="10dp"
+        android:text="UVA Progress"
+        android:textColor="#DBDBDB"
+        android:textSize="50dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:padding="10dp"
+        android:text="Change Username:"
+        android:textColor="#DBDBDB"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:hint="Type Here"
+        android:inputType="textPersonName"
+        android:textColor="#f1f1f1"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Ranklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/problem"
+        android:layout_alignBottom="@+id/problem"
+        android:layout_alignStart="@+id/textView"
+        android:text="Ranklist" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="12dp"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="18dp"
+        android:text="Problem Status" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/textView"
+
+        android:layout_marginTop="43dp"
+
+        android:textColor="#ec2c2c"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
